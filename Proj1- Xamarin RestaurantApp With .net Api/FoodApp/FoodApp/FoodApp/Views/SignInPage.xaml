@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodApp.Views.SignInPage">
+    <ContentPage.Content Spacing="25"
+                         Margin="20">
+        <ScrollView>
+            <StackLayout >
+                <Label Text="Sign In"                       
+                       HorizontalTextAlignment="Center"/>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Login"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"/>
+                        <Entry Placeholder="Email"
+                               x:Name="Email"
+                               Keyboard="Email"/>
+                        <Entry Placeholder="Password"
+                               x:Name="Password"
+                               IsPassword="True"
+                               Keyboard="Default"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="LOGIN"
+                        x:Name="LoginBtn"
+                        Clicked="LoginBtn_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

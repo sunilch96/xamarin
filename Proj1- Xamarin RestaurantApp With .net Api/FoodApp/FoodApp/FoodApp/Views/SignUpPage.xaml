@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodApp.Views.SignUpPage"            
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content Spacing="25"
+                         Margin="20">
+        <ScrollView>
+            <StackLayout >
+                <Label Text="Sign Up"                       
+                       HorizontalTextAlignment="Center"/>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Create An Account"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"/>
+                        <Entry Placeholder="Name"
+                               x:Name="Name"
+                               Keyboard="Text"/>
+                        <Entry Placeholder="Email"
+                               x:Name="Email"
+                               Keyboard="Email"/>
+                        <Entry Placeholder="Password"
+                               x:Name="Password"
+                               IsPassword="True"
+                               Keyboard="Default"/>
+                        <Entry Placeholder="Confirm Password"
+                               x:Name="ConfirmPassword"
+                               IsPassword="True"
+                               Keyboard="Default"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="CONTINUE"
+                        x:Name="SignUpBtn"
+                        Clicked="SignUpBtn_Clicked"/>
+                <Label Text="Already have Account?"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"/>
+                <Button Text="LOGIN"
+                        x:Name="LoginBtn"
+                        Clicked="LoginBtn_Clicked"/>
+
+                <Button Text="LOGIN_PG"
+                        x:Name="LoginBtn_PG"
+                        Clicked="LoginBtn_PG_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
